@@ -1,0 +1,145 @@
+Project Prompt: Option 1
+GitHub Repo: https://github.com/ashviniyer21/CS18000-Project4 
+
+Notes:
+I/O should be System.in and System.out stuff
+
+
+
+Main Tasks:
+Read Me for project four
+Instructions on how to run and compile your code
+A list of who submitted which parts of the assignment on Brightspace and Vocareum. 
+For example: Student 1 - Submitted Report on Brightspace. Student 2 - Submitted Vocareum workspace.
+A detailed description of each class. This should include the functionality included in the class, the testing done to verify it works properly, and its relationship to other classes in the project. 
+
+
+Classes
+User interface
+Student class
+Teacher class
+Course class
+
+Data must persist regardless of whether or not a user is connected. If a user disconnects and reconnects, their data should still be present. 
+File I/O to store data
+One file to store usernames & passwords (ex. user,pass\nuser,pass), one for posts(ex. user,post,postdata,etc.)
+Descriptive errors should appear as appropriate. For example, if someone tries to log in with an invalid account. The application should not crash under any circumstances. 
+Users can create, edit, and delete accounts for themselves.
+The attributes you collect as part of account creation are up to you. 
+Users should be required to either create an account or sign in before gaining access to the application. 
+Whichever identifier you maintain for the user must be unique. 
+During account creation, a user will specify their role. 
+Discussion Forums
+
+
+Any number of discussion forums may be added to a course. 
+The forum topic must be listed at the top of the forum page. 
+Replies will be listed below the topic with the newest appearing first. 
+Comments on replies will appear beneath each reply. 
+All created text content must display a timestamp, including the forum topic and any replies. 
+Teachers
+Teachers can create, edit, and delete discussion forums.
+Teachers can reply to student responses. 
+Students
+Students can create replies to discussion forums. 
+Students can reply to other students in their posts. 
+Course
+Keep track of which teacher created it
+Only that teacher can delete the course
+Each course can have multiple forums
+Each forum has its own topic
+Each forum can have multiple posts
+Each post can have multiple replies
+Each post can have votes(one vote per student)
+Teachers can sort course dashboard
+
+
+Program Logic:
+Welcome Message
+Let the user choose if they want to create or login to an account
+Create
+Create username and password (2x), save in file
+Choose if teacher or student
+Enter their first and last name
+Check if username is taken (print “Invalid Username - Username Taken”) and go back to step 2
+Login
+Check to see if username and password are valid
+If valid go to step 3, else go to step 2
+End Program
+Teacher
+Log Out - go to step 2
+Modify account - go to step 5
+Create a course
+Course name
+Go to step 3
+Edit a course
+Create a new Discussion Forum
+Add topic name - Go to 3
+Edit a discussion forum
+Change the name - go to 3
+Write a post
+Edit a post
+Delete a post
+Delete discussion forums
+Delete discussion forum - Go to 3
+Delete a course
+
+
+Student
+Log out - go to step 2
+Modify account - go to step 5
+View courses
+Enroll in Courses
+Prompt all of the available courses (don’t include the courses student is already enrolled in)
+Let them type in the course (case sensitive) that they want to enroll in (keep prompting until they enter a valid course)
+Modify Account
+Delete Account - deletes account and goes to step 2
+Edit Account  - go to step 6
+Edit Account
+Change Password
+Enter current password
+Enter new password twice
+Change Username
+Enter current password to verify
+Make sure new username is not taken
+Change first or last name
+Enter current password to verify
+Discussion Post -- plan this out later
+
+Tasks:
+Main driver class (main method)
+All the prompts, scanner input and output
+Login system (login, creating, editing, and deleting accounts)
+Teacher functionality
+Student functionality
+Unit testing and stuff
+Discussion Forums
+Forums
+Posts
+Comments
+Votes
+Emoji responses
+Polling (post poll)
+Teacher dashboard
+Grading 
+Roles:
+Vishnu - Teacher dashboard, polling, emoji responses, forums, teachers
+Shreya - Menu, Votes, Comments/Replies, posts
+Ashvin - Login system, Discussion forum, Student Dashboard
+Noah - Testing, File creation, grading
+
+
+Reports:
+
+Part 1 (GROUP):
+500 words
+Describe project and functionalities implemented
+Both required and optionional, describe them
+Part 2 (Individual):
+200 words each person describing what each member did
+100 words each person describing what you would do differently if you had a chance to redo it
+Part 3 (GROUP):
+400 words total
+200 words, how we will collaborate for project 5
+100 words, tasks for project 5, and who will do them (planning)
+100 words, conflict mitigation strategy
